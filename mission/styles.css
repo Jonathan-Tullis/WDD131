@@ -1,0 +1,87 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px;
+    background-color: white;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px 80px;
+    border: 3px solid #333;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    color: black;
+}
+
+header h2 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    color: #006EB6;
+}
+
+header::after {
+    content: "";
+    position: relative;
+    top: -15px;
+    display: block;
+    width: 600px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto 50px auto;
+}
+
+main {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+main p {
+    margin-bottom: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+main p:first-of-type {
+    margin-bottom: 40px;
+}
+
+.university-mission {
+    font-style: italic;
+    margin: 40px 0 25px 0;
+    text-align: left;
+}
+
+ol {
+    padding-left: 25px;
+    margin-left: 0;
+}
+
+ol li {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
