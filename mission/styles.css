@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 40px;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -14,6 +14,18 @@ body {
     padding: 60px 80px;
     border: 3px solid #333;
     text-align: center;
+}
+
+/* Theme selector styling */
+#theme-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
 }
 
 header h1 {
@@ -36,12 +48,10 @@ header h2 {
 
 header::after {
     content: "";
-    position: relative;
-    top: -15px;
     display: block;
-    width: 600px;
+    width: 300px;
     height: 1px;
-    background-color: black;
+    background-color: #006EB6;
     margin: 0 auto 50px auto;
 }
 
@@ -84,4 +94,38 @@ footer {
 footer img {
     width: 150px;
     height: auto;
+}
+
+/* Dark theme styles */
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark .container {
+    background-color: #333;
+    border-color: white;
+}
+
+.dark header h1 {
+    color: white;
+}
+
+.dark header h2 {
+    color: #A0D4ED; /* BYU-I accent blue for better contrast on dark background */
+}
+
+.dark header::after {
+    background-color: #A0D4ED;
+}
+
+.dark #theme-selector {
+    background-color: #555;
+    color: white;
+    border-color: #777;
+}
+
+.dark #theme-selector option {
+    background-color: #555;
+    color: white;
 }
