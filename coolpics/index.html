@@ -3,37 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Pics</title>
+    <meta name="description" content="Cool Pics - A responsive photo gallery">
+    <meta name="author" content="Your Name">
+    <title>Cool Pics - Photo Gallery</title>
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer></script>
 </head>
-<header>
-    <nav class="TopNav">
-  <a>Home</a>
-  <a>People</a>
-  <a>Places</a>
-  <a>About</a>
-  <a>Contact</a>
-    </nav>
-</header>
 <body>
-    <h1 class="TopPage">Current Work</h1>
+    <header>
+        <h1>Cool Pics 📷</h1>
+        <nav>
+            <button id="menu-button">Menu</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
-        <figure class="Figure">
-            <img class="Gallery" src="norris-full.jpeg">
-            <img class="Gallery" src="norris-full.jpeg">
-            <img class="Gallery" src="norris-sm.jpeg">
-            <img class="Gallery" src="norris-full.jpeg">
-            <img class="Gallery" src="norris-full.jpeg">
-            <img class="Gallery" src="norris-sm.jpeg">
-            <img class="Gallery" src="norris-full.jpeg">
-            <img class="Gallery" src="norris-sm.jpeg">
-            <img class="Gallery" src="norris-full.jpeg">
-
-        </figure>
+        <h2>Image Gallery</h2>
+        <section class="gallery">
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpeg" alt="scenic view">
+            </figure>
+        </section>
     </main>
-        
+    
+    <footer>
+        <p>&copy;2023 Not a real site 😀</p>
+    </footer>
 </body>
-<footer>
-    <p>©2023 Not a real site 😀.</p>
-</footer>
 </html>
