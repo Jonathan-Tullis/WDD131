@@ -38,14 +38,14 @@ function viewerTemplate(imageSrc, altText) {
 
 
 function viewHandler(event) {
-    
+    // Get the clicked image
     const clickedImage = event.target.closest('img');
     
     
     if (clickedImage) {
-       
+        
         const src = clickedImage.src;
-        const newSrc = src.split('-')[0] + '-full.jpeg';
+        const newSrc = src.replace('-sm.jpeg', '-full.jpeg');
         const alt = clickedImage.alt;
         
         
@@ -76,6 +76,5 @@ function viewHandler(event) {
         });
     }
 }
-
 
 gallery.addEventListener('click', viewHandler);
