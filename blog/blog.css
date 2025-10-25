@@ -1,4 +1,43 @@
-/* Skip to Content Link - Accessibility */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+    --light-gray: #f4f4f4;
+    --body-font: Helvetica, Arial, sans-serif;
+    --headline-font: Lora, Impact, serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.1em;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--headline-font);
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 .skiptocontent a {
     position: absolute;
     top: -40px;
@@ -15,7 +54,7 @@
     top: 0;
 }
 
-/* Header Styles */
+
 header {
     background-color: var(--light-gray);
     padding: 20px 0;
@@ -28,7 +67,7 @@ header h1 {
     color: var(--dark);
 }
 
-/* Navigation Grid */
+
 nav > ul {
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -55,7 +94,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* Main Layout Grid */
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -65,12 +104,12 @@ main {
     padding: 0 20px;
 }
 
-/* Articles Section */
+
 .articles {
     padding-right: 20px;
 }
 
-/* Article Grid */
+
 article {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -84,7 +123,7 @@ article:last-child {
     border-bottom: none;
 }
 
-/* Article Details (Left Column) */
+
 .article-details {
     text-align: right;
     padding-top: 5px;
@@ -111,7 +150,7 @@ article:last-child {
     opacity: 0.7;
 }
 
-/* Article Content (Right Column) */
+
 .article-content h2 {
     font-size: 2em;
     color: var(--dark);
@@ -133,7 +172,13 @@ article:last-child {
     text-align: justify;
 }
 
-/* Filters Sidebar */
+.article-stars {
+    font-size: 1.5em;
+    margin-top: 15px;
+    text-align: left;
+}
+
+
 .filters {
     background-color: var(--light-gray);
     padding: 20px;
@@ -149,7 +194,7 @@ article:last-child {
     font-size: 1.5em;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--dark);
     color: white;
