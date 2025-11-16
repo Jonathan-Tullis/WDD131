@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and share delicious recipes from around the world">
+    <meta name="author" content="Jonathan Tullis">
+    
+    <meta property="og:title" content="Recipe Book - Delicious Recipes">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover and share delicious recipes from around the world">
+    <meta property="og:image" content="https://yourusername.github.io/wdd131/recipes/images/apple-crisp.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd131/recipes/">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Recipe Book</title>
+    <link rel="icon" type="image/png" href="images/recipe-book.png">
+    <link rel="stylesheet" href="recipes.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <label for="search">Find a Recipe!</label>
+            <form class="search-form" role="search">
+                <input 
+                    type="search" 
+                    id="search" 
+                    name="search" 
+                    placeholder=""
+                    aria-label="Search recipes">
+            </form>
+        </section>
+        
+        <section class="recipes">
+
+            <article class="recipe">
+                <div class="recipe-image">
+                    <img src="images/apple-crisp.jpg" alt="Apple Crisp dessert">
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-tags">
+                        <span class="tag">dessert</span>
+                        <span class="tag">tag2</span>
+                    </div>
+                    <h2>Apple Crisp</h2>
+                    <span
+                        class="rating"
+                        role="img"
+                        aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="recipe-description">
+                        A classic fall dessert with tender apples topped with a buttery, cinnamon-spiced oat crumble. Perfect served warm with vanilla ice cream.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="copyright">&copy;2023</p>
+        <div class="social">
+            <a href="#" aria-label="Instagram"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+            <a href="#" aria-label="YouTube"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+            <a href="#" aria-label="Pinterest"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
+        </div>
+        <p class="attribution">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        </p>
+    </footer>
+</body>
+</html>
