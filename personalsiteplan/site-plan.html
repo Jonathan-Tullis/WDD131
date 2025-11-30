@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="site-plan.css"/>
+    <style>
+      .content-img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px auto;
+        display: block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cool Dev Portfolio Site Plan</h1>
+      <h2>Jonathan Tullis</h2>
+      <h2>WDD 131</h2>
+    </header>
+    <main>
+      <hr />
+      <h2>Overview</h2>
+      <h3>Purpose</h3>
+      <p>
+        Hey, I’m Jonathan Tullis. I’m learning to become a Game Developer and 3D Artist, and in my free time, 
+        I like to make indie games. My personal website will show the projects I’ve worked on, like games I’m creating and even 3D models that I am working on. 
+        It’s a place where I can share my progress, what I’m learning, and what I’m excited about. I want it to be simple, easy to explore, and a way for others to see what I can do. 
+        If you’ve ever been curious about how someone gets started with game development and 3D modeling, this site will give you a real look at the process.
+      </p>
+
+      <h3>Audience</h3>
+      <p>
+        This site is made for anyone curious about 3D Art, Game Development, or Indie Game Design. 
+        It’s especially for students, new developers, or recruiters looking to understand what I can do. 
+        Most visitors will be between 16–35 years old and want to explore my personal projects or connect with a self-starting developer. 
+        I want them to browse my portfolio and learn about my process or even reach out.
+      </p>
+      <h3>Dynamic Elements & JavaScript Functionality</h3>
+      <p>
+        This website will use JavaScript to create an interactive and engaging user experience. Here's how I plan to implement dynamic functionality:
+      </p>
+      
+      <h4>1. Project Filtering System (Projects Page)</h4>
+      <p>
+        DOM Manipulation & Events: I'll create an interactive filter system where users can click category buttons (Game Development, 3D Art, All Projects) to dynamically show/hide projects. 
+        JavaScript will select all project cards using <code>document.querySelectorAll()</code>, listen for click events on filter buttons, and toggle CSS classes to show/hide projects based on their category data attribute.
+      </p>
+      
+      <h4>2. Project Data Management (ES Modules & Objects)</h4>
+      <p>
+        Objects & ES Modules: Project data (title, description, image, category, tools used, date) will be stored in an array of objects in a separate <code>projects.js</code> module. 
+        This module will be imported into the main script, and the <code>renderProjects()</code> function will use <code>Array.map()</code> to generate HTML for each project card dynamically.
+      </p>
+      
+      <h4>3. Image Modal/Lightbox (Conditional Branching)</h4>
+      <p>
+        Conditional Logic & DOM Interaction: When users click on a project image, JavaScript will check if a modal already exists using an <code>if/else</code> statement. 
+        If not, it will create a modal element dynamically, display the full-size image, and add a close button. Clicking outside the modal or on the close button will remove it from the DOM.
+      </p>
+      
+      <h4>4. Contact Form Validation (Home Page)</h4>
+      <p>
+        Event Listeners & Validation: The contact form will use JavaScript to validate user input before submission. 
+        An event listener on the form's submit event will prevent default submission, check if fields are filled using conditional statements, 
+        and display error messages or success confirmation dynamically by modifying the DOM.
+      </p>
+      
+      <h4>5. Dark Mode Toggle (All Pages)</h4>
+      <p>
+        DOM Manipulation & Local Storage: A toggle button in the header will switch between light and dark themes. 
+        JavaScript will add/remove a "dark-mode" class on the body element using <code>classList.toggle()</code>, 
+        and save the user's preference in localStorage so it persists across page visits.
+      </p>
+      
+      <h4>6. Animated Project Counter (Home Page)</h4>
+      <p>
+        Array Methods: The homepage will display "X Projects Completed" with an animated counting effect. 
+        JavaScript will use <code>Array.filter()</code> to count completed projects from the project data array, 
+        then animate the number counting up using <code>setInterval()</code>.
+      </p>
+
+      <p>
+        Summary: This site will demonstrate organization through multiple functions and modules, 
+        extensive DOM interaction (selecting, modifying, creating elements), event handling (clicks, form submission), 
+        conditional branching (validation, modal checks), and array methods (map, filter, forEach) to manage and display project data dynamically.
+      </p>
+
+      <hr />
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="images/CoolLogo.png" alt="Logo image" class="content-img logo-img" />
+
+      <hr />
+      <h2>Style Guide</h2>
+      <h3>Color Palette</h3>
+      <table class="colors">
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent 1</th>
+          <th>Accent 2</th>
+        </tr>
+        <tr>
+          <td class="primary"></td>
+          <td class="secondary"></td>
+          <td class="accent1"></td>
+          <td class="accent2"></td>
+        </tr>
+      </table>
+
+      <h3>Typography</h3>
+      <h4>Heading Font: IM Fell French Canon SC</h4>
+      <h4>Paragraph Font: Lato, Helvetica, sans-serif</h4>
+
+      <h3>Normal paragraph example</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <h3>Colored paragraph example</h3>
+      <p class="colored">Lorem ipsum dolor sit amet...</p>
+
+      <h3>Navigation</h3>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </nav>
+
+      <hr />
+      <h2>Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home">Home</div>
+        <div class="sm-page2">Projects</div>
+        <div class="sm-page3">About</div>
+        <div class="top">&nbsp;</div>
+        <div class="left">&nbsp;</div>
+        <div class="right">&nbsp;</div>
+      </div>
+
+      <hr />
+      <h2>Content</h2>
+
+      <h3>Home Page</h3>
+      <strong>Welcome to My Journey</strong>
+      <p>
+        Hi! I'm Jonathan Tullis, a beginner Game Developer and 3D Artist.
+        This site is my personal space to share my projects, progress, and everything I'm learning along the way. 
+        Whether you're curious about how to get started in development or just like to see behind-the-scenes of someone figuring it all out, you're in the right place.
+      </p>
+
+      <strong>Why I Built This Site</strong>
+      <p>
+        People always ask how you start making games. 
+        I figured the best way to answer that was to show them. This site is my open journal—my portfolio, sandbox, and devlog all in one.
+        I wanted a place to keep track of what I’ve built and share it with others who might be on a similar path or just curious.
+      </p>
+
+      <strong>What You'll Find Here</strong>
+      <p>
+        I’ll show off my personal projects (like platformers and puzzle games), talk about the tools I’m learning (Blender, Unity, Adobe etc), 
+        and give updates as I improve. My main goal is to be real and honest about the learning process—what works, what fails, and what’s fun.
+      </p>
+
+      <p>Images for the Home page</p>
+      <img src="images/Welcome Image.png" alt="Jonathan's welcome section" class="content-img" />
+
+      <h3>Projects</h3>
+      <strong>My Indie Game Projects</strong>
+      <p>
+        This page shows off my current and past game projects. Most are built in Unreal Engine or Unity, 
+        and they reflect a mix of creativity and experimentation. You’ll see screenshots, descriptions, what tech I used, and where to play them if they’re available online.
+      </p>
+
+      <strong>Project Development Logs</strong>
+      <p>
+        For each game, I like to break down the development steps. I’ll walk through challenges I hit (bugs, scope creep, design issues), 
+        and how I solved them. This gives anyone following along a transparent look into what it’s really like to build something solo.
+      </p>
+
+      <strong>Future Goals</strong>
+      <p>
+        Some games are works in progress. I’ll share what I plan to add or fix and ask for feedback when I can. 
+        My dream is to keep evolving these ideas into something people enjoy playing. This site will track that process.
+      </p>
+
+      <p>Images for the Projects page</p>
+      <img src="images/darkworld-4k-3840x2160-2ed69bbba703.jpg" alt="Project screenshot 1" class="content-img" />
+  
+
+      <h3>About</h3>
+      <strong>How I Got Into Dev</strong>
+      <p>
+        I’ve always been curious about how things work, especially tech and games. A few years ago, 
+        I started learning the Unity game engine, and that turned into building simple games. Now I’m studying software development seriously, and working on side projects all the time.
+      </p>
+
+      <strong>What I’m Learning</strong>
+      <p>
+        Right now, I’m focused on learning Blender, playing with different game engines to find one I like, 
+        and exploring how design and code come together to make good experiences. I don’t know everything yet, but I love the process of figuring it out.
+      </p>
+
+      <strong>Let’s Connect</strong>
+      <p>
+        If you’re a developer, gamer, or someone just starting outreach out! I’m always down to connect and collaborate. 
+        You can use the contact links on the site or follow me through the projects I share here.
+      </p>
+
+      <p>Images for the About page</p>
+      <img src="images/GuyandPC.jpg" alt="working at computer" class="content-img" />
+      <img src="images/game-designer-vs-game-developer-similarities.jpg" alt="Game dev vs design" class="content-img" />
+
+      <hr />
+      <h2>Wireframes</h2>
+      <h3>Home</h3>
+      <img src="images/wireframe_home.png" alt="home page wireframe" class="content-img" />
+      <h3>Projects</h3>
+      <img src="images/Project_Wireframe.jpeg" alt="page 2 wireframe" class="content-img" />
+      <h3>About</h3>
+      <img src="images/About_Wireframe.png" alt="page 3 wireframe" class="content-img" />
+    </main>
+  </body>
+</html>
