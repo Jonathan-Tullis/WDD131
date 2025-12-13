@@ -1,0 +1,355 @@
+/* Base Styles */
+:root {
+   --primary-color: #330A1F; 
+  --secondary-color: #0bbac1;
+  --accent1-color: #bb0864;
+  --accent2-color: white;
+
+  --heading-font: "IM Fell French Canon SC", serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+}
+
+
+/* Logo */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* General body */
+body {
+  margin: 0;
+  font-family: var(--paragraph-font);
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+main {
+  flex: 1;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+.main-heading {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-family: var(--paragraph-font);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Image */
+.hero-image {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.hero-image img {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Home Page Content */
+.home-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.home-content h2 {
+  margin-top: 2rem;
+  font-family: var(--heading-font);
+}
+
+/* Featured Projects Section */
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.featured-projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured-projects h2 {
+  margin-bottom: 2rem;
+  font-family: var(--heading-font);
+}
+
+.project {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+}
+
+.project h3 {
+  margin-top: 0.5rem;
+  font-family: var(--heading-font);
+}
+
+.project p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* About Page */
+.about-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.about-content h2 {
+  margin-top: 2rem;
+  font-family: var(--heading-font);
+  
+}
+
+.about-banner {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-hero {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-photo {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  border-radius: 50%;
+  max-width: 250px;
+}
+
+.skills-section {
+  float: right;
+  width: 300px;
+  margin: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skills-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.skills-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.extra-info {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.profile-card {
+  width: 300px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.profile-card h2 {
+  margin: 0.5rem 0;
+  font-family: var(--heading-font);
+  color: #000;
+}
+
+.profile-card .subtitle {
+  color: #777;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.profile-card p {
+  margin: 0.25rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #444;
+}
+
+
+/* Projects Page */
+.projects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-header h1,
+.projects-header h2 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
+}
+
+.projects-description {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+
+.project-item {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.project-item h3 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-family: var(--heading-font);
+}
+
+.project-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
